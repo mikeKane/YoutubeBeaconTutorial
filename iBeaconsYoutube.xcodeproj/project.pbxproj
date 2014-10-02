@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06C27A3DD0C643A5B4073E46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F882D2C03FE4401BB8C1174D /* libPods.a */; };
 		AD99BC6419DDA6900085CC1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD99BC6319DDA6900085CC1A /* main.m */; };
 		AD99BC6719DDA6900085CC1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD99BC6619DDA6900085CC1A /* AppDelegate.m */; };
 		AD99BC6A19DDA6900085CC1A /* iBeaconsYoutube.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD99BC6819DDA6900085CC1A /* iBeaconsYoutube.xcdatamodeld */; };
@@ -15,6 +16,8 @@
 		AD99BC7219DDA6900085CC1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD99BC7119DDA6900085CC1A /* Images.xcassets */; };
 		AD99BC7519DDA6900085CC1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD99BC7319DDA6900085CC1A /* LaunchScreen.xib */; };
 		AD99BC8119DDA6900085CC1A /* iBeaconsYoutubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD99BC8019DDA6900085CC1A /* iBeaconsYoutubeTests.m */; };
+		AD99BC8E19DDBF220085CC1A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD99BC8A19DDAD420085CC1A /* CoreLocation.framework */; };
+		AD99BC8F19DDBF290085CC1A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD99BC8C19DDAD490085CC1A /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		217856712A4C4589A3897D13 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AD99BC5E19DDA6900085CC1A /* iBeaconsYoutube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBeaconsYoutube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD99BC6219DDA6900085CC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD99BC6319DDA6900085CC1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +46,9 @@
 		AD99BC7A19DDA6900085CC1A /* iBeaconsYoutubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBeaconsYoutubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD99BC7F19DDA6900085CC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD99BC8019DDA6900085CC1A /* iBeaconsYoutubeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBeaconsYoutubeTests.m; sourceTree = "<group>"; };
+		AD99BC8A19DDAD420085CC1A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AD99BC8C19DDAD490085CC1A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		F882D2C03FE4401BB8C1174D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD99BC8F19DDBF290085CC1A /* CoreBluetooth.framework in Frameworks */,
+				AD99BC8E19DDBF220085CC1A /* CoreLocation.framework in Frameworks */,
+				06C27A3DD0C643A5B4073E46 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +78,8 @@
 				AD99BC6019DDA6900085CC1A /* iBeaconsYoutube */,
 				AD99BC7D19DDA6900085CC1A /* iBeaconsYoutubeTests */,
 				AD99BC5F19DDA6900085CC1A /* Products */,
+				217856712A4C4589A3897D13 /* Pods.xcconfig */,
+				B387189636D44AB5906307D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +134,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B387189636D44AB5906307D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD99BC8C19DDAD490085CC1A /* CoreBluetooth.framework */,
+				AD99BC8A19DDAD420085CC1A /* CoreLocation.framework */,
+				F882D2C03FE4401BB8C1174D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD99BC8419DDA6900085CC1A /* Build configuration list for PBXNativeTarget "iBeaconsYoutube" */;
 			buildPhases = (
+				B774388F03064AF48AD5949D /* Check Pods Manifest.lock */,
 				AD99BC5A19DDA6900085CC1A /* Sources */,
 				AD99BC5B19DDA6900085CC1A /* Frameworks */,
 				AD99BC5C19DDA6900085CC1A /* Resources */,
+				8FEB5CE84BCA4D0BAD5D0D2B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +240,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8FEB5CE84BCA4D0BAD5D0D2B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B774388F03064AF48AD5949D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD99BC5A19DDA6900085CC1A /* Sources */ = {
@@ -345,6 +402,7 @@
 		};
 		AD99BC8519DDA6900085CC1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 217856712A4C4589A3897D13 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iBeaconsYoutube/Info.plist;
@@ -355,6 +413,7 @@
 		};
 		AD99BC8619DDA6900085CC1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 217856712A4C4589A3897D13 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iBeaconsYoutube/Info.plist;
@@ -416,6 +475,7 @@
 				AD99BC8619DDA6900085CC1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD99BC8719DDA6900085CC1A /* Build configuration list for PBXNativeTarget "iBeaconsYoutubeTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +484,7 @@
 				AD99BC8919DDA6900085CC1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

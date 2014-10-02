@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,58 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AH3-oO-wlj">
+                                <rect key="frame" x="184" y="253" width="232" height="51"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iBeacon range is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEw-hh-FH8">
+                                <rect key="frame" x="184" y="198" width="232" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="C69-re-8zb"/>
+                                    <constraint firstAttribute="height" constant="21" id="iCz-vE-x2q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="tGB-UY-dsi">
+                                <rect key="frame" x="0.0" y="467" width="108" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="cs2-Zf-ZDa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#RealityMatters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLz-Ac-Elc">
+                                <rect key="frame" x="105" y="529" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EEw-hh-FH8" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2kG-8N-Dbj"/>
+                            <constraint firstItem="tGB-UY-dsi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="447" id="9E5-8J-5ud"/>
+                            <constraint firstItem="AH3-oO-wlj" firstAttribute="top" secondItem="EEw-hh-FH8" secondAttribute="bottom" constant="34" id="DhJ-cD-x8d"/>
+                            <constraint firstItem="EEw-hh-FH8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="178" id="JKS-L1-Fk1"/>
+                            <constraint firstItem="EEw-hh-FH8" firstAttribute="trailing" secondItem="AH3-oO-wlj" secondAttribute="trailing" id="MKW-MA-btY"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="AH3-oO-wlj" secondAttribute="bottom" constant="296" id="O20-0L-nbF"/>
+                            <constraint firstItem="AH3-oO-wlj" firstAttribute="leading" secondItem="EEw-hh-FH8" secondAttribute="leading" id="YYU-xX-OlK"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="tGB-UY-dsi" secondAttribute="bottom" constant="8" symbolic="YES" id="cGP-fe-zjr"/>
+                            <constraint firstItem="tGB-UY-dsi" firstAttribute="leading" secondItem="2fi-mo-0CV" secondAttribute="leading" id="meC-bY-Lgf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="beaconLabel" destination="AH3-oO-wlj" id="99x-YA-I5b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="download" width="225" height="225"/>
+    </resources>
 </document>
